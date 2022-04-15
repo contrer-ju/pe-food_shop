@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import GeneralProvider from "./providers/GeneralProvider";
+import SideBar from "./routes/SideBar";
+import NavBar from "./routes/NavBar";
+import Home from "./routes/Home";
+import Menu from "./routes/Menu";
+import Category from "./routes/Category";
+import NotFound from "./routes/NotFound";
+import "./Styles.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GeneralProvider>
+      <BrowserRouter>
+        <NavBar />
+        <SideBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="menu" element={<Menu />} />
+          <Route path="desserts" element={<Category />} />
+          <Route path="salads" element={<Category />} />
+          <Route path="sandwichs" element={<Category />} />
+          <Route path="burgers" element={<Category />} />
+          <Route path="breakfasts" element={<Category />} />
+          <Route path="juices" element={<Category />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </GeneralProvider>
   );
 }
 

@@ -1,0 +1,51 @@
+export const products = [
+  {
+    name: "desserts",
+    category: "desserts",
+    image: "",
+    description: "",
+    price: 0,
+  },
+  {
+    name: "desserts2",
+    category: "desserts",
+    image: "",
+    description: "",
+    price: 0,
+  },
+  {
+    name: "salads",
+    category: "salads",
+    image: "",
+    description: "",
+    price: 0,
+  },
+  {
+    name: "sandwichs",
+    category: "sandwichs",
+    image: "",
+    description: "",
+    price: 0,
+  },
+  {
+    name: "burgers",
+    category: "burgers",
+    image: "",
+    description: "",
+    price: 0,
+  },
+  {
+    name: "breakfasts",
+    category: "breakfasts",
+    image: "",
+    description: "",
+    price: 0,
+  },
+  {
+    name: "juices",
+    category: "juices",
+    image: "",
+    description: "",
+    price: 0,
+  },
+];

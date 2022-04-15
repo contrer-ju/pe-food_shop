@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #3c3541;
+  font-size: calc(14px + 2vmin);
+  color: #fff;
+}
+
+.home {
+  max-width: 1520px;
+  margin: auto;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sideBar {
+  width: 11rem;
+  height: 82.5vh;
+  position: fixed;
+  left: 0;
+  top: 4.5rem;
+  z-index: 99;
+  background-color: #29262b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 0% 7% 7% 0%;
+}
+
+.sidebarText {
+  padding: 0.3rem 0rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.sideBarTopMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.sideBarBottomMenu {
+  width: 70%;
+}
+
+.sideBarIconsFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.sideBarIconsBorder {
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.navBar {
+  max-width: 1520px;
+  width: 100%;
+  height: 3.5rem;
+  margin: auto;
+  top: 0;
+  z-index: 99;
+  background-color: #29262b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBarRightContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 107px;
+}
+
+.imageLogo {
+  height: 2.9rem;
+  width: auto;
+}
+
+.imageMenu {
+  height: 1.9rem;
+  width: auto;
+  padding-left: 0.7rem;
+}
+
+.imageIGLogo {
+  height: 2.8rem;
+  width: auto;
+}
+
+.imageShoppingCart {
+  height: 2.5rem;
+  width: auto;
+  padding-right: 0.7rem;
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.slideIn {
+  -webkit-animation: slideIn 0.7s ease-out both normal;
+  animation: slideIn 0.7s ease-out both normal;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideOut {
+  -webkit-animation: slideOut 0.7s ease-out both reverse;
+  animation: slideOut 0.7s ease-out both reverse;
+}
+
+@-webkit-keyframes slideOut {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 450px) {
+  body {
+    font-size: calc(7px + 2vmin);
+  }
+
+  .home {
+    height: 90vh;
+  }
+
+  .sideBar {
+    height: 90vh;
+    width: 13rem;
+  }
+
+  .imageIGLogo {
+    height: 3rem;
+  }
+
+  .sideBarBottomMenu {
+    width: 55%;
+  }
+}
