@@ -1,16 +1,39 @@
-import { useLocation } from "react-router-dom";
-import { products } from "../constants/products";
+import { useLocation, Link } from "react-router-dom";
+import { useContext } from "react";
+import { GeneralContext } from "../providers/GeneralProvider";
+import { PRODUCTS } from "../constants/ProductsList";
+import { SPANISH } from "../constants/Spanish";
+import { ENGLISH } from "../constants/English";
 
 export default function Category() {
+  const { language, setOpenMenu, setQuantity } = useContext(GeneralContext);
   const categorySelected = useLocation().pathname.substring(1);
-  let productsFromCategorySelected = products.filter((element) =>
+  const productsFromCategorySelected = PRODUCTS.filter((element) =>
     element.category.includes(categorySelected)
   );
   return (
-    <div className="home">
-      {productsFromCategorySelected.map((element, index) => (
-        <p key={index}>{element.name}</p>
-      ))}
+    <div className="home" onClick={() => setOpenMenu(false)}>
+      <span className="categortyTitle">
+        {language
+          ? ENGLISH.menu[categorySelected]
+          : SPANISH.menu[categorySelected]}
+      </span>
+      <div className="productsListContainer">
+        {productsFromCategorySelected.map((element, index) => (
+          <Link
+            key={index}
+            className="productContainer"
+            to={"/" + categorySelected + "/" + element.identification}
+            onClick={() => setQuantity(0)}
+          >
+            <img className="imageProduct" src={element.image} alt="Product" />
+            <span>
+              {language ? element.english.name : element.spanish.name}
+            </span>
+            <span>{element.price}</span>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

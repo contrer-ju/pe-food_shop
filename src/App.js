@@ -5,6 +5,7 @@ import NavBar from "./routes/NavBar";
 import Home from "./routes/Home";
 import Menu from "./routes/Menu";
 import Category from "./routes/Category";
+import Product from "./routes/Product"
 import NotFound from "./routes/NotFound";
 import "./Styles.css";
 
@@ -18,11 +19,17 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="menu" element={<Menu />} />
           <Route path="desserts" element={<Category />} />
+          <Route path="desserts/:identification" element={<Product />} />
           <Route path="salads" element={<Category />} />
+          <Route path="salads/:identification" element={<Product />} />
           <Route path="sandwichs" element={<Category />} />
+          <Route path="sandwichs/:identification" element={<Product />} />
           <Route path="burgers" element={<Category />} />
+          <Route path="burgers/:identification" element={<Product />} />
           <Route path="breakfasts" element={<Category />} />
+          <Route path="breakfasts/:identification" element={<Product />} />
           <Route path="juices" element={<Category />} />
+          <Route path="juices/:identification" element={<Product />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

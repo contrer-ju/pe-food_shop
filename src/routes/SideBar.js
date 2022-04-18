@@ -5,35 +5,39 @@ import instagram from "../images/icons8-instagram-48.png";
 import whatsapp from "../images/icons8-whatsapp-48.png";
 import USFlag from "../images/icons8-usa-48.png";
 import SpainFlag from "../images/icons8-spain-48.png";
-import { spanish } from "../constants/spanish";
-import { english } from "../constants/english";
+import { SPANISH } from "../constants/Spanish";
+import { ENGLISH } from "../constants/English";
 
 export default function SideBar() {
-  const { openMenu, language, setLanguage } = useContext(GeneralContext);
+  const { openMenu, setOpenMenu, language, setLanguage } =
+    useContext(GeneralContext);
 
   return (
-    <div className={openMenu ? "sideBar slideIn" : "sideBar slideOut "}>
+    <div
+      className={openMenu ? "sideBar slideIn" : "sideBar slideOut "}
+      onClick={() => setOpenMenu(false)}
+    >
       <div className="sideBarTopMenu">
         <Link className="sidebarText" to={"menu"}>
-          {language ? english.menu.menu : spanish.menu.menu}
+          {language ? ENGLISH.menu.menu : SPANISH.menu.menu}
         </Link>
         <Link className="sidebarText" to={"desserts"}>
-          {language ? english.menu.desserts : spanish.menu.desserts}
+          {language ? ENGLISH.menu.desserts : SPANISH.menu.desserts}
         </Link>
         <Link className="sidebarText" to={"salads"}>
-          {language ? english.menu.salads : spanish.menu.salads}
+          {language ? ENGLISH.menu.salads : SPANISH.menu.salads}
         </Link>
         <Link className="sidebarText" to={"sandwichs"}>
-          {language ? english.menu.sandwichs : spanish.menu.sandwichs}
+          {language ? ENGLISH.menu.sandwichs : SPANISH.menu.sandwichs}
         </Link>
         <Link className="sidebarText" to={"burgers"}>
-          {language ? english.menu.burgers : spanish.menu.burgers}
+          {language ? ENGLISH.menu.burgers : SPANISH.menu.burgers}
         </Link>
         <Link className="sidebarText" to={"breakfasts"}>
-          {language ? english.menu.breakfasts : spanish.menu.breakfasts}
+          {language ? ENGLISH.menu.breakfasts : SPANISH.menu.breakfasts}
         </Link>
         <Link className="sidebarText" to={"juices"}>
-          {language ? english.menu.juices : spanish.menu.juices}
+          {language ? ENGLISH.menu.juices : SPANISH.menu.juices}
         </Link>
       </div>
       <div className="sideBarBottomMenu">
