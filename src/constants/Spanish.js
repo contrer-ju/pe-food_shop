@@ -18,9 +18,17 @@ export const SPANISH = {
     description: "Descripcion",
     buton: "Agregar al Carrito",
     limitMessage:
-      "Con esta selección supera el limite de 20 unidades por producto para una orden.",
+      "Con esta selección superas el limite de 20 unidades para este producto en una orden.",
     shopMessage: "Su elección fue añadida exitosamente al carrito, desea:",
     keepBuying: "Seguir comprando",
     goShopping: "Ir al carrito de compras",
+  },
+  shopping: {
+    title: "Carrito de Compra",
+    order: "Resumen del pedido",
+    shipping: "Costos de Envío",
+    taxes: "Impuestos",
+    total: "TOTAL",
+    checkout: "Finalizar Pedido"
   },
 };

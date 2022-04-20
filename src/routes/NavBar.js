@@ -24,11 +24,13 @@ export default function NavBar() {
       <Link to={"/"} onClick={() => setOpenMenu(false)}>
         <img className="imageLogo" src={logo} alt="Logo" />
       </Link>
-      <img
-        className="imageShoppingCart"
-        src={shoppingCart.length === 0 ? emptyCart : fullCart}
-        alt="Shopping Cart"
-      />
+      <Link to={"/shopping"} onClick={() => setOpenMenu(false)}>
+        <img
+          className="imageShoppingCart"
+          src={shoppingCart.length === 0 ? emptyCart : fullCart}
+          alt="Shopping Cart"
+        />
+      </Link>
     </div>
   );
 }

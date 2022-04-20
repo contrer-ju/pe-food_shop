@@ -4,7 +4,7 @@ export const PRODUCTS = [
     category: "desserts",
     image:
       "https://images.unsplash.com/photo-1517306085770-871ff74b2274?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGRlc3NlcnR8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    price: "$ 0,00",
+    price: 10,
     english: {
       name: "Lorem",
       description:
@@ -21,7 +21,7 @@ export const PRODUCTS = [
     category: "desserts",
     image:
       "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGVzc2VydHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
-    price: "$ 0,00",
+    price: 5,
     english: {
       name: "Ipsum",
       description: "Cupidatat Lorem velit adipisicing cupidatat deserunt.",
@@ -36,7 +36,7 @@ export const PRODUCTS = [
     category: "salads",
     image:
       "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2FsYWR8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    price: "$ 0,00",
+    price: 2,
     english: {
       name: "Amet",
       description:
@@ -53,7 +53,7 @@ export const PRODUCTS = [
     category: "sandwichs",
     image:
       "https://media.istockphoto.com/photos/cold-cuts-sandwich-picture-id535223393?b=1&k=20&m=535223393&s=170667a&w=0&h=vvGe0Rtv0dZ2TctsWbLgpUZ8m3fIYjLNhPxLBqp32Oo=",
-    price: "$ 0,00",
+    price: 3,
     english: {
       name: "Sit",
       description: "Elit esse consectetur nulla tempor culpa.",
@@ -68,7 +68,7 @@ export const PRODUCTS = [
     category: "burgers",
     image:
       "https://images.unsplash.com/photo-1582196016295-f8c8bd4b3a99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YnVyZ2Vyc3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
-    price: "$ 0,00",
+    price: 1,
     english: {
       name: "Dolor",
       description:
@@ -85,7 +85,7 @@ export const PRODUCTS = [
     category: "breakfasts",
     image:
       "https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnJlYWtmYXN0fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    price: "$ 0,00",
+    price: 40,
     english: {
       name: "Adipisci",
       description:
@@ -102,7 +102,7 @@ export const PRODUCTS = [
     category: "juices",
     image:
       "https://images.unsplash.com/photo-1542444459-db37a5da9d5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGp1aWNlc3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
-    price: "$ 0,00",
+    price: 0.1,
     english: {
       name: "Porro",
       description: "Esse eu minim nisi ad laboris fugiat laboris.",

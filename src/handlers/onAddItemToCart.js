@@ -3,6 +3,7 @@ import { PRODUCT_LIMIT } from "../constants/various";
 export default function onAddItemToCart(
   idSelected,
   priceSelected,
+  imageSelected,
   englishName,
   spanishName,
   quantity,
@@ -21,6 +22,7 @@ export default function onAddItemToCart(
       aShoppingCart.push({
         identification: idSelected,
         price: priceSelected,
+        image: imageSelected,
         quantity: quantity,
         english: {
           name: englishName,

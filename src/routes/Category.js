@@ -11,6 +11,11 @@ export default function Category() {
   const productsFromCategorySelected = PRODUCTS.filter((element) =>
     element.category.includes(categorySelected)
   );
+  let numberFormat = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  });
+
   return (
     <div className="home" onClick={() => setOpenMenu(false)}>
       <span className="categortyTitle">
@@ -30,7 +35,7 @@ export default function Category() {
             <span>
               {language ? element.english.name : element.spanish.name}
             </span>
-            <span>{element.price}</span>
+            <span>{numberFormat.format(element.price)}</span>
           </Link>
         ))}
       </div>

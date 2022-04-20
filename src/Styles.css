@@ -138,8 +138,9 @@ body {
 
 .categortyTitle {
   align-self: flex-start;
-  padding-left: 8rem;
+  padding-left: 1.3rem;
   padding-bottom: 4rem;
+  font-weight: bold;
 }
 
 .productsListContainer {
@@ -213,6 +214,19 @@ body {
   padding: 0.7rem;
 }
 
+.imageTrash {
+  height: 2.2rem;
+  width: auto;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.imageTrash2 {
+  height: 1.5rem;
+  width: auto;
+  padding-left: 1rem;
+}
+
 .button {
   display: inline-block;
   font-weight: 400;
@@ -252,7 +266,7 @@ body {
   width: 15rem;
 }
 
-.modalShop {
+.modal {
   border: 5px solid #ac5fdb;
   width: 20rem;
   height: 20rem;
@@ -265,28 +279,158 @@ body {
   top: 25%;
 }
 
-.contentModalShop {
+.contentModal {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.modalAlert {
-  border: 5px solid #ac5fdb;
-  width: 20rem;
-  height: 15rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #3c3541;
-  position: fixed;
-  top: 25%;
-}
-
 .messageModal {
   width: 80%;
+}
+
+.shoppingListContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  width: 95%;
+  padding-bottom: 1.5rem;
+}
+
+.shoppingTitleContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orderSummaryContainer {
+  width: 95%;
+  padding-bottom: 2.3rem;
+}
+
+.subTitleOrderSummary {
+  padding-left: 1rem;
+  font-weight: bold;
+}
+
+.itemsOrderSummaryContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.itemShoppingContainer {
+  border-bottom: 1.5px solid #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.itemDetailsOnCart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.imageItemOnCart {
+  height: 3.7rem;
+  width: auto;
+  padding-bottom: 0.6rem;
+  padding-right: 1rem;
+}
+
+.textQtyInCart {
+  width: 1.7rem;
+  text-align: center;
+}
+
+.checkoutContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 95%;
+}
+
+.carouselImageContainer {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselActiveImage {
+  width: 90%;
+  height: auto;
+  z-index: 10;
+  position: fixed;
+  border-radius: 4%;
+  left: 5%;
+  top: 20%;
+}
+
+.carouselLeftImage {
+  width: 80%;
+  height: auto;
+  z-index: 5;
+  position: fixed;
+  border-radius: 4%;
+  left: 10%;
+  top: 10%;
+  opacity: 0.4;
+}
+
+.carouselRightImage {
+  width: 80%;
+  height: auto;
+  z-index: 5;
+  position: fixed;
+  border-radius: 4%;
+  right: 10%;
+  top: 35%;
+  opacity: 0.4;
+}
+
+.arrowsImageSize {
+  height: 2rem;
+  width: auto;
+}
+
+.hideElement {
+  display: none;
+}
+
+.playPauseImage {
+  position: fixed;
+  top: 11%;
+  right: 2.2%;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.positionLeftArrow {
+  position: fixed;
+  top: 65%;
+  left: 10%;
+}
+
+.positionRightArrow {
+  position: fixed;
+  top: 65%;
+  right: 10%;
+}
+
+.disabledLink {
+  pointer-events: none;
 }
 
 .slideIn {
@@ -351,7 +495,7 @@ body {
   }
 }
 
-@media (min-width: 450px) {
+@media (min-width: 700px) {
   body {
     font-size: calc(7px + 2vmin);
   }
@@ -385,13 +529,87 @@ body {
     font-size: calc(18px + 2vmin) !important;
   }
 
-  .modalShop {
+  .modal {
     width: 35rem;
-    height: 20rem;
   }
 
-  .modalAlert {
-    width: 35rem;
-    height: 15rem;
+  .imageTrash {
+    padding-right: 5rem;
+    height: 2.5rem;
+  }
+
+  .imageTrash2 {
+    height: 1.9rem;
+  }
+
+  .categortyTitle {
+    padding-left: 7.2rem;
+  }
+
+  .orderSummaryContainer {
+    width: 90%;
+  }
+
+  .shoppingListContainer {
+    width: 90%;
+    padding-left: 8rem;
+    padding-right: 5rem;
+  }
+
+  .checkoutContainer {
+    width: 90%;
+  }
+
+  .itemsOrderSummaryContainer {
+    padding-left: 3rem;
+  }
+
+  .subTitleOrderSummary {
+    padding-left: 3rem;
+  }
+
+  .imageItemOnCart {
+    height: 5rem;
+    width: auto;
+    padding-bottom: 0.6rem;
+    padding-right: 1rem;
+  }
+
+  .carouselActiveImage {
+    width: 36%;
+    left: 32%;
+    top: 11%;
+  }
+
+  .carouselLeftImage {
+    width: 32%;
+    left: 17%;
+    top: 15%;
+  }
+
+  .carouselRightImage {
+    width: 32%;
+    right: 17%;
+    top: 15%;
+  }
+
+  .arrowsImageSize {
+    height: 4rem;
+  }
+
+  .positionLeftArrow {
+    top: 35%;
+    left: 12%;
+  }
+
+  .positionRightArrow {
+    top: 35%;
+    right: 12%;
+  }
+
+  .playPauseImage {
+    top: 13%;
+    right: 13%;
+    height: 1.7rem;
   }
 }
